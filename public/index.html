@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>Chat con sockets</title>
+</head>
+<body>
+
+    <div class="chat">
+
+        <div class="container-join-section ">
+
+            <div class="header-join-user">
+                
+                <div class="img-container-join">
+                    <img src="./juma.png" alt="">
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="https://github.com/Yormenxx" target="_blank">Github</a>
+                    </li>
+
+                    <li>
+                        <a href="https://yormenxx.github.io/" target="_blank">Portafolio</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/juan-manuel-ortiz-47b93424a/" target="_blank">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="main-join-section">
+
+                
+            
+                <div class="form-chat">
+
+                    <h1 class="title-join">Bienvenido al chat</h1>
+            
+                    <label for="">Ingresa un nombre de usuario</label>
+            
+                    <input type="text" id="username">
+            
+                    <button id="joinUser">Entrar</button>
+            
+                </div>
+
+                <div class="img-chat-persons">
+                    <img src="./chat-img.avif" alt="">
+                </div>
+
+            </div>
+    
+    
+    
+        </div> 
+    
+    
+        <div class="container--section active">
+
+            <div class="header-section">
+
+                <div class="img-container">
+                    <img src="./juma.png" alt="">
+                </div>
+
+                <div class="typing">
+                        
+                </div>
+
+
+                <div class="exit">
+                    Salir del chat
+                </div>
+
+
+            </div>
+    
+            
+    
+            <div class="container--chat ">
+
+               
+
+                <div class="output">
+                    
+               
+                 
+    
+
+                    
+
+
+               
+                </div>
+
+             
+
+                <form action="" class="chat-form">
+                  
+                    <input type="text" id="Message" placeholder="Ingresa un mensaje" required>
+                    <button id="send">Enviar <i class="fa-sharp fa-solid fa-paper-plane" style="color: #1e5ecc;"></i></button>
+            
+                </form>
+    
+            </div>
+
+           
+    
+        </div>
+
+    </div>
+
+
+
+
+
+
+<!-- 
+    <div class="container-msg">
+
+        <div class="output">
+           
+        </div>
+
+    </div>
+
+
+    <form action="">
+        <input type="text" id="Name" placeholder="Ingrese el nombre">
+        <input type="text" id="Message" placeholder="mensaje">
+        <button id="send">Enviar</button>
+
+    </form>
+ -->
+
+ 
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./chat.js"></script> 
+
+</body>
+</html>
