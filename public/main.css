@@ -5,6 +5,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+body{
+    background-color: #111;
+}
+
 .chat .active{
     display: none;
 }
@@ -27,13 +31,18 @@ ul{
     column-gap: 30px;
 }
 ul a{
+    padding: 6px 11px;
+    border: 1px solid transparent;
+    border-radius: 6px;
     text-decoration: none;
-    font-weight: bold;
     color: black;
-    text-transform: uppercase;
-    
+    text-transform: capitalize;
+    color: white;
+    transition: .3s ease-in-out;
 }
-
+ul a:hover{
+    background-color: #09cc54;
+}
 .main-join-section{
     display: flex;
     flex-wrap: wrap;
@@ -50,41 +59,83 @@ ul a{
     overflow: none;
 }
 
-.title-join{
+.container-join-section{
+    position: relative;
+}
 
+.bumble1{
+    position: absolute;
+    top: 0;
+    left: -1.25rem;
+    z-index: -10;
+    width: 20rem;
+    height: 20rem;
+    background-color: #10e586;
+    filter: blur(45px);
+    opacity: 0.3;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.bumble2{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    z-index: -10;
+    width: 15rem;
+    height: 15rem;
+    background-color: #a1ff4a;
+    filter: blur(45px);
+    opacity: 0.3;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.title-join{
+    color: #03943b;
+    background-image: linear-gradient(270deg, #03943b 2%, #31c68d 46%, #b2f81b 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 2.5rem;
 }
-.form-chat{
+form{
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
 }
 
-.form-chat label{
+form label{
+    width: 300px;
     font-size: 1.2rem;
+    text-align: center;
+    color: #03b848;
 }
-.form-chat input{
-    padding: 10px 90px;
-    color: black;
-    font-weight: bold;
+form input{
+    width: 300px;
+    height: 40px;
+    padding: 2px 3px;
+    border: 1px solid rgba(255, 255, 255, 0.973);
+    color: white;
+    border-radius: 5px;
     outline: none;
-    border-radius: 1px solid black;
-    border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0.384);
+
 }
 
-.form-chat button{
+form button{
     padding: 10px 70px;
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.678);
+    font-weight: bold;
     cursor: pointer;
     outline: none;
-    border-radius: 1px solid black;
+    border: 1px solid #09cc54;
     border-radius: 10px;
 }
 
-
-.form-chat button:hover{
+form button:hover{
 
     color: black;
     background-color: white;
@@ -95,7 +146,7 @@ ul a{
     width: 90%;
     margin: 0 auto;
     margin-top: 20px;
-    border: 1px solid black;
+
     border-radius: 7px;
     
 }
@@ -144,9 +195,12 @@ ul a{
 }
 .chat-form input{
     width: 80%;
-    padding: 6px 40px;
+    height: 40px;
+    padding: 6px 10px;
     outline: none;
-    border: 1px solid black;
+    border: 1px solid #09cc54;
+    background: white;
+    color: black;
     border-radius: 6px;
     font-weight: bold;
 }
@@ -189,8 +243,7 @@ ul a{
 .container-info-my{
     margin-right: 0;
     border-radius: 9px;
-    border: 1px solid black;
-    background-color: #111;
+    background-color: #10a9e5;
     color: white;
     padding: 10px 30px;
 }
@@ -204,15 +257,15 @@ ul a{
     margin-right: 0;
     border-radius: 9px;
     border: 1px solid black;
-    background-color: rgb(177, 246, 255);
+    background-color: #333;
     padding: 10px 30px;
 }
 .container-info-other .name{
-    color: black;
+    color: white;
 }
 .name{
     font-weight: bold;
-    color: yellow;
+    color: white;
     margin-bottom: 5px;
 }
 .text{
@@ -220,13 +273,13 @@ ul a{
 }
 .my .name span{
 
-    color: #888;
+    color: #033666cb;
     font-size: .8rem;
 }
 
 
 .update, .updateExit{
-    color: black;
+    color: white;
     font-size: 1.2rem;
     font-weight: bold;
     
@@ -238,46 +291,3 @@ ul a{
     color: black;
     background-color: violet;
 }
-
-/* 
-.output{
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.3rem;
-    height: 150px;
-    overflow-y: scroll;
-    padding: 20px;
-
-}
-
-
-form{
-    margin: 0 auto;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
-    padding: 20px;
-}
-
-form input{
-    width: 35%;
-    padding: 5px;
-    outline: none;
-    border: 1px solid black;
-    background-color: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-}
-
-form button{
-    width: 40%;
-    padding: 6px;
-    background-color: rgb(135, 197, 222);
-    color: black;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-} */
