@@ -1,8 +1,9 @@
 
+[![socket.png](https://i.postimg.cc/0yhTtpVn/socket.png)](https://postimg.cc/3kCfND50)
+
 # SOCKET CHAT 
 
-Algunas screenshots de cómo funciona el proyecto.
-## Tech Stack
+## Tecnoolgias
 
 **Client:** Html, Css, tailwind 
 
